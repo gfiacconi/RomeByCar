@@ -12,44 +12,44 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #559bcc; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #f5f5dc; /* Beige */
+  --default-color: #333333; /* Dark Gray */
+  --heading-color: #013220; /* Dark Green */
+  --accent-color: #b8860b; /* Dark Goldenrod */
+  --surface-color: #ffffff; /* White */
+  --contrast-color: #ffffff; /* White */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.5);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #559bcc; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #f5f5dc; /* Semi-transparent Dark Gray */
+  --nav-hover-color: #b8860b; /* Dark Goldenrod */
+  --nav-mobile-background-color: #f5f5dc; /* Beige */
+  --nav-dropdown-background-color: #f5f5dc; /* Beige */
+  --nav-dropdown-color: #333333; /* Dark Gray */
+  --nav-dropdown-hover-color: #b8860b; /* Dark Goldenrod */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the same color scheme. */
 
 .light-background {
-  --background-color: #f1f3f8;
-  --surface-color: #ffffff;
+  --background-color: #f0e68c; /* Khaki */
+  --surface-color: #ffffff; /* White */
 }
 
 .dark-background {
-  --background-color: #142e6c;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #1c4097;
-  --contrast-color: #ffffff;
+  --background-color: #013220; /* Dark Green */
+  --default-color: #ffffff; /* White */
+  --heading-color: #ffffff; /* White */
+  --surface-color: #013220; /* Dark Green */
+  --contrast-color: #ffffff; /* White */
 }
 
 /* Smooth scroll */
@@ -86,6 +86,9 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+
+/* Il resto del codice CSS rimane invariato */
+
 
 /* PHP Email Form Messages
 ------------------------------*/
@@ -176,7 +179,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(20, 46, 108, 0.9);
+  --background-color: #013220;
 }
 
 /*--------------------------------------------------------------
@@ -653,7 +656,7 @@ section,
   padding: 120px 0 60px 0;
   display: flex;
   align-items: center;
-  background: url(../img/hero-bg.jpg);
+  background: url(../img/new/sfondoHeader4.jpg);
 }
 
 .hero:before {
@@ -723,7 +726,7 @@ section,
   left: 0;
   box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.5);
   border-radius: 30px;
-  width: 250px;
+  width: 350px;
 }
 
 .hero .hero-img .phone-2 {
@@ -936,6 +939,14 @@ section,
   line-height: 24px;
   margin-bottom: 0;
   padding: 0 30px 30px 30px;
+}
+
+
+
+#team .team-member .member-img img {
+  width: 50%; /* Riduce l'immagine al 50% della sua dimensione originale */
+  height: auto; /* Mantiene il rapporto di proporzione */
+  max-width: 300px; /* Limita la dimensione massima dell'immagine */
 }
 
 /*--------------------------------------------------------------
