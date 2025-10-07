@@ -1,674 +1,874 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-  <!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/a22e6fe987acbb890c0aa107/script.js"></script> <!-- End cookieyes banner -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- Start cookieyes banner -->
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/a22e6fe987acbb890c0aa107/script.js"></script>
+  <!-- End cookieyes banner -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rome By Cart - Esplora Roma con Eleganza e Comfort</title>
-  <meta name="description" content="Scopri Roma con eleganza e comfort attraverso tour esclusivi in golf cart elettrici. Esplora monumenti emblematici, piazze incantevoli e angoli segreti con guide esperte. Personalizza il tuo tour per un'esperienza unica nella Città Eterna.">
-  <meta name="keywords" content="Roma, Tour in Golf Cart, Eleganza, Comfort, Cultura, Storia, Personalizzato, Guide Esperte, Turismo Sostenibile, Esplorazione, Monumenti, Piazze, Angoli Segreti, Città Eterna">
+  <meta name="description" content="Scopri Roma con eleganza e comfort grazie a tour esclusivi in golf cart elettrici. Esplora monumenti iconici, piazze incantevoli e angoli nascosti con guide esperte. Personalizza il tuo tour per un'esperienza unica nella Città Eterna." />
+  <meta name="keywords" content="Roma, Tour in Golf Cart, Eleganza, Comfort, Cultura, Storia, Personalizzato, Guide Esperte, Turismo Sostenibile, Esplorazione, Monumenti, Piazze, Angoli Nascosti, Città Eterna" />
 
-  <!-- Favicons -->
-  <link href="assets/img/new/logo.jpeg" rel="icon">
-  <link href="assets/img/new/logo.jpeg" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Favicons (mantenere i nomi dei file) -->
+  <link href="assets/img/new/Senza titolo-2 copia (1) (1).png" rel="icon" />
+  <link href="assets/img/new/Senza titolo-2 copia (1) (1).png" rel="apple-touch-icon" />
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Brand-First Glass UI -->
+<style>
+  /* ===== Layout centering & responsive fixes ===== */
+  .container,
+  .container-xl,
+  .container-fluid.container-xl {
+    margin-inline: auto;
+  }
 
-  <!-- =======================================================
-  * Template Name: SoftLand
-  * Template URL: https://bootstrapmade.com/softland-bootstrap-app-landing-page-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  @media (min-width: 1200px) {
+    .container,
+    .container-xl {
+      max-width: 1200px;
+    }
+  }
+
+  .cards-grid {
+    margin-inline: auto;
+    justify-items: stretch;
+  }
+
+  .hero .container,
+  .section-title,
+  #features .container,
+  #services .container,
+  #reviews .container,
+  #contact .container,
+  #team .container {
+    margin-inline: auto;
+  }
+
+  /* ===== CSS Vars ===== */
+  :root{
+    --brand: 18 99 61;     /* #12633D */
+    --gold: 163 126 42;    /* #A37E2A */
+    --black: 0 0 0;        /* #000000 */
+    --fg: 245 247 246;     /* text */
+    --muted: 198 208 202;  /* subtle text */
+    --radius: 22px;
+    --blur: 14px;
+    --glass-b: rgba(255,255,255,.06);
+    --glass-brd: rgba(255,255,255,.14);
+    --shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.05);
+
+    /* Altezza header (usata per offset del body e per il menu mobile) */
+    --header-h: 74px; /* mobile default */
+  }
+  @media (min-width: 992px){
+    :root{ --header-h: 86px; } /* desktop */
+  }
+
+  /* ===== Base ===== */
+  html, body { height:100%; }
+  body{
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: rgb(var(--fg));
+    background:
+      radial-gradient(1200px 600px at 10% -10%, rgba(18,99,61,.20), transparent 60%),
+      radial-gradient(900px 600px at 95% 5%, rgba(163,126,42,.18), transparent 60%),
+      rgb(var(--black));
+    overflow-x: hidden;
+
+    /* Spazio per l'header fisso */
+    padding-top: var(--header-h);
+  }
+  a{color: rgb(var(--fg)); text-decoration:none}
+  a:hover{opacity:.95}
+
+  .glass{
+    background: linear-gradient(135deg, rgba(18,99,61,.18) 0%, rgba(255,255,255,.06) 55%, rgba(255,255,255,.03) 100%);
+    backdrop-filter: blur(var(--blur)); -webkit-backdrop-filter: blur(var(--blur));
+    border:1px solid var(--glass-brd); border-radius: var(--radius); box-shadow: var(--shadow);
+  }
+
+  /* ===== Header/Nav fisso + logo più grande ===== */
+  header.header{
+    position: fixed; top:0; left:0; right:0; z-index:1100;
+    width:100%;
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(18px) saturate(120%);
+    border-bottom: 1px solid rgba(163,126,42,.35);
+  }
+
+  /* Logo: gestione dimensioni senza conflitti */
+  .logo img{ height:auto; }
+  @media (max-width: 991px){
+    .logo img{ width: 140px; }
+  }
+  @media (min-width: 992px){
+    .logo img{ width: clamp(200px, 18vw, 320px); }
+  }
+
+  #navmenu{ display:flex; align-items:center; gap:.75rem; }
+  .nav-toggle{
+    display:inline-grid; place-items:center; width:44px; height:44px;
+    border-radius:14px; border:1px solid rgba(255,255,255,.16);
+    background: rgba(255,255,255,.06); color:#fff;
+  }
+
+  /* Pannello mobile: si apre sotto l'header fisso */
+  #navmenu-list{
+    position:absolute; left:12px; right:12px;
+    top: calc(var(--header-h) + 8px);
+    padding:12px; border-radius: var(--radius);
+    border:1px solid rgba(255,255,255,.16);
+    background: rgba(0,0,0,.82); backdrop-filter: blur(16px);
+    box-shadow: var(--shadow);
+  }
+  @media (min-width: 992px){
+    #navmenu-list{ position: static; padding:0; border:0; background: transparent; box-shadow:none; }
+    .nav-toggle{ display:none; }
+  }
+
+  #navmenu-list ul{
+    display:flex; flex-direction:column; gap:.5rem; margin:0; padding:0; list-style:none;
+  }
+  @media (min-width: 992px){
+    #navmenu-list ul{ flex-direction:row; gap:.6rem; align-items:center; }
+    #navmenu { margin-left: auto; }
+  }
+  #navmenu-list a{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.6rem .95rem; border-radius:999px;
+    border:1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.04);
+    font-weight:700;
+  }
+  #navmenu-list a:hover{
+    border-color: rgba(163,126,42,.65); background: rgba(163,126,42,.16); color: rgb(var(--gold));
+  }
+
+  /* Mobile sticky CTA */
+  .mobile-cta{ position: fixed; left:0; right:0; bottom:14px; z-index:998; display:none; justify-content:center; }
+  @media (max-width: 991px){ .mobile-cta{ display:flex; } }
+
+  .btn-brand{
+    display:inline-flex; align-items:center; gap:.6rem; padding:.9rem 1.2rem; border-radius:16px; border:0; color:#fff;
+    font-weight:800; letter-spacing:.2px; box-shadow: 0 12px 30px rgba(18,99,61,.45);
+    background: linear-gradient(135deg, rgba(18,99,61,1) 0%, rgba(18,99,61,.95) 40%, rgba(163,126,42,.95) 100%);
+    transition: transform .2s ease, filter .2s ease;
+  }
+  .btn-brand:hover{ transform: translateY(-2px); filter: brightness(1.06); }
+
+  .btn-ghost{
+    display:inline-flex; align-items:center; gap:.6rem; padding:.9rem 1.2rem; border-radius:16px;
+    border:1px solid rgba(163,126,42,.6); color: rgb(var(--gold)); background: rgba(163,126,42,.1); font-weight:700;
+  }
+
+  /* Sections */
+  section.section{ padding: 90px 0; }
+  .section-title{ text-align:center; margin-bottom: 34px; }
+  .section-title h2{ font-weight:900; letter-spacing:-.02em; color: rgb(var(--gold)); }
+  .section-title p{ color: rgb(var(--muted)); }
+
+  /* Hero */
+  .hero{
+    position:relative; padding: 140px 0 110px;
+    background: url('assets/img/new/roma2.jpg') center/cover no-repeat fixed; isolation:isolate;
+  }
+  .hero::after{
+    content:""; position:absolute; inset:0; z-index:0;
+    background: linear-gradient(180deg, rgba(0,0,0,.65) 0%, rgba(18,99,61,.45) 35%, rgba(0,0,0,.70) 100%);
+  }
+  .hero .container{ position:relative; z-index:1; }
+  .hero h1{
+    font-size: clamp(2.2rem, 4vw + 1rem, 4rem); line-height:1.05; font-weight:900; color: rgb(var(--gold));
+    text-shadow: 0 6px 30px rgba(0,0,0,.45);
+  }
+  .hero p{ max-width: 920px; margin-inline:auto; font-size: clamp(1rem, 1vw + .8rem, 1.25rem); color: rgb(var(--fg) / .92); }
+
+  /* Icon boxes */
+  .icon-box{
+    padding: 22px; border-radius: var(--radius); border:1px solid rgba(163,126,42,.45);
+    background: rgba(255,255,255,.04); backdrop-filter: blur(var(--blur)); box-shadow: var(--shadow); height:100%;
+  }
+  .icon-box i{
+    font-size: 26px; width: 46px; height: 46px; display: inline-grid; place-items: center;
+    border-radius: 12px; color:#fff;
+    background: linear-gradient(135deg, rgba(18,99,61,1), rgba(163,126,42,1));
+    border:1px solid rgba(255,255,255,.18); margin-bottom: 10px;
+  }
+
+  /* Cards grid (Tour & Servizi) */
+  .cards-grid{ display:grid; grid-template-columns: repeat(12, 1fr); gap: 22px; }
+  .card-glass{
+    grid-column: span 3; min-height:100%;
+    border-radius: calc(var(--radius) + 2px); border:1px solid rgba(163,126,42,.45);
+    background: rgba(255,255,255,.04); backdrop-filter: blur(var(--blur)); box-shadow: var(--shadow);
+    overflow:hidden; transition: transform .25s ease, border-color .25s ease, background .25s ease;
+  }
+  .card-glass:hover{ transform: translateY(-4px); border-color: rgba(163,126,42,.9); background: rgba(255,255,255,.06); }
+  .card-glass .img{ position:relative; }
+  .card-glass .img img{ width:100%; height:210px; object-fit:cover; display:block; }
+  .card-glass .img .icon{
+    position:absolute; bottom:12px; right:12px; width:42px; height:42px; display:grid; place-items:center;
+    border-radius:12px; background: rgba(0,0,0,.45); border:1px solid rgba(255,255,255,.18)
+  }
+  .card-glass h3{ font-size:1.1rem; font-weight:800; padding: 16px 16px 0; color: rgb(var(--brand)); }
+  .card-glass p{ padding: 6px 16px 10px; color: rgb(var(--muted)); }
+  .card-glass .read-more{
+    display:inline-flex; align-items:center; gap:.5rem; margin: 2px 16px 14px; padding:.5rem .8rem;
+    border-radius: 12px; border:1px solid rgba(163,126,42,.45); background: rgba(163,126,42,.10); color: rgb(var(--gold)); font-weight:700;
+  }
+
+  /* Features row */
+  .features .features-item .img-fluid{ border-radius: var(--radius); border:1px solid rgba(163,126,42,.45); box-shadow: var(--shadow); }
+
+  /* Team */
+  .team-member{ padding: 18px; border-radius: var(--radius); border:1px solid rgba(163,126,42,.45); background: rgba(255,255,255,.04); text-align:center; }
+  .team-member .member-img img{ filter: drop-shadow(0 20px 40px rgba(0,0,0,.35)); }
+  .team-member .member-info span{ color: rgb(var(--muted)); }
+
+  /* Recensioni */
+  .reviews .review{ padding: 28px; border-radius: var(--radius); border:1px solid rgba(163,126,42,.45); background: rgba(255,255,255,.04); }
+
+  /* Contatti */
+  .info-item{ padding: 18px; border-radius: var(--radius); border:1px solid rgba(163,126,42,.45); background: rgba(255,255,255,.04); }
+  .php-email-form input, .php-email-form textarea{
+    border-radius: 14px !important; border:1px solid rgba(163,126,42,.55) !important;
+    background: rgba(255,255,255,.04) !important; color:#fff !important;
+  }
+  .php-email-form button{
+    border-radius: 16px; border:0;
+    background: linear-gradient(135deg, rgba(18,99,61,1), rgba(163,126,42,1)); padding:.9rem 1.3rem; font-weight:800;
+  }
+
+  /* Footer */
+  .footer{ background: rgba(0,0,0,.68); border-top: 1px solid rgba(163,126,42,.35); }
+  .social-links a{
+    width: 42px; height: 42px; display:inline-grid; place-items:center; border-radius: 12px;
+    border:1px solid rgba(163,126,42,.55); background: rgba(163,126,42,.12); margin: 0 6px; color: rgb(var(--gold));
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 1199px){ .card-glass{ grid-column: span 4; } }
+  @media (max-width: 991px){
+    .card-glass{ grid-column: span 12; }
+    .hero{ padding: 110px 0 86px; }
+  }
+  @media (max-width: 575px){ .logo img{ width: 130px; } }
+
+  /* --- Extra Glass & Animations --- */
+  .glass.shine{ position: relative; overflow: hidden; }
+  .glass.shine::before{
+    content:""; position:absolute; inset:-40%;
+    transform: rotate(35deg) translate3d(-10%,0,0);
+    background: linear-gradient(90deg, transparent 0 40%, rgba(255,255,255,.18) 50%, transparent 60% 100%);
+    filter: blur(12px); animation: sheen 6s linear infinite;
+  }
+  @keyframes sheen{
+    0%{ transform: rotate(35deg) translate3d(-60%,0,0); }
+    100%{ transform: rotate(35deg) translate3d(60%,0,0); }
+  }
+
+  @keyframes floaty{ 0%{ transform: translateY(0)} 50%{ transform: translateY(-6px)} 100%{ transform: translateY(0)} }
+  .card-glass:hover{ animation: floaty 3s ease-in-out infinite; }
+
+  .panel-glass{
+    background: linear-gradient(135deg, rgba(18,99,61,.14), rgba(255,255,255,.06));
+    border:1px solid rgba(255,255,255,.16); border-radius: var(--radius);
+    backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); box-shadow: var(--shadow);
+  }
+
+  .parallax{ background-attachment: fixed; will-change: background-position; }
+
+  .tilt{ transform-style: preserve-3d; perspective: 900px; transition: transform .25s ease; }
+  .tilt:hover{ transform: rotateX(4deg) rotateY(-4deg) translateY(-2px); }
+
+  section.section{ position: relative; }
+  section.section::before{
+    content:""; position:absolute; inset:0 -10vw auto -10vw; height: 2px; top:0;
+    background: linear-gradient(90deg, rgba(163,126,42,.0), rgba(163,126,42,.6), rgba(163,126,42,.0));
+    filter: blur(0.5px);
+  }
+
+  /* iOS parallax fix */
+  @supports (-webkit-touch-callout: none) {
+    .hero { background-attachment: scroll; }
+  }
+
+  /* footer centering ultrawide */
+  footer .container { margin-inline: auto; max-width: 1200px; }
+</style>
+
 </head>
 
 <body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/new/logoNoback.svg" alt="Rome By Cart Logo" style="width: 100px; height: auto; margin-right: 10px;">
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between py-2">
+      <a href="#hero" class="logo d-flex align-items-center">
+        <!-- <img src="assets/img/new/logoNoback.svg" alt="Rome By Cart Logo" /> -->
+        <img src="assets/img/new/Senza titolo-2 copia.png" alt="Rome By Cart Logo" />
       </a>
-  
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#why-us">Perché Sceglierci</a></li>
-          <li><a href="#tours">Tour</a></li>
-          <li><a href="#features">Personalizza</a></li>
-          <li><a href="#servizi">Servizi</a></li>
-          <li><a href="#team">Chi Siamo</a></li>
-          <li><a href="#contact">Contatti</a></li>
-          <li><a href="./index.html">🇬🇧</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      <nav id="navmenu" class="navmenu ms-auto">
+        <button class="nav-toggle d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu-list" aria-controls="navmenu-list" aria-expanded="false" aria-label="Apri il menu">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse d-lg-block" id="navmenu-list">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#why-us">Perché sceglierci</a></li>
+            <li><a href="#tours">Tour</a></li>
+            <li><a href="#features">Personalizza</a></li>
+            <li><a href="#services">Servizi</a></li>
+            <li><a href="#team">Chi siamo</a></li>
+            <li><a href="#contact">Contatti</a></li>
+            <li><a href="./index.html" title="English">🇬🇧</a></li>
+          </ul>
+        </div>
       </nav>
-      
-  
     </div>
   </header>
-  
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-cta">
+    <a href="https://romebycart.simplybook.it/v2/#book/count/1/provider/3/" class="btn-brand shadow-lg">
+      <i class="bi bi-calendar2-check"></i> Prenota ora
+    </a>
+  </div>
 
   <main class="main">
+    <!-- Hero -->
+    <section id="hero" class="hero section text-center parallax" data-aos="fade" data-aos-delay="0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-xl-10" data-aos="zoom-in" data-aos-delay="150">
+            <div class="glass shine p-4 p-md-5 tilt">
+              <h1 class="mb-3">Scopri Roma con Eleganza e Comfort</h1>
+              <p class="lead mx-auto mb-3">Benvenuto in Rome by Golf Cart, il modo più raffinato e confortevole per esplorare la Città Eterna. I nostri tour esclusivi su golf cart elettrici offrono un'esperienza unica, che ti immerge tra millenni di storia e nella vivace cultura romana.</p>
+              <div class="d-flex justify-content-center gap-2 flex-wrap">
+                <a href="https://romebycart.simplybook.it/v2/#book/count/1/provider/3/" class="btn-brand">
+                  <i class="bi bi-calendar2-check"></i> Prenota ora
+                </a>
+                <a href="#tours" class="btn-ghost">
+                  <i class="bi bi-compass"></i> Scopri i tour
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- Hero Section -->
-<section id="hero" class="hero section dark-background">
+    <!-- Why Us -->
+    <section id="why-us" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Perché scegliere Rome by Golf Cart?</h2>
+        <p>Scegliere Rome by Golf Cart significa affidarsi a chi ama Roma e desidera condividere questa passione. I nostri tour garantiscono:</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="50">
+          <div class="col-md-6" data-aos="flip-up" data-aos-delay="100">
+            <div class="icon-box">
+              <i class="bi bi-car-front"></i>
+              <h3>Comfort e Accessibilità</h3>
+              <p>Esplora vie poco accessibili e tesori nascosti di Roma nel massimo comfort.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="flip-up" data-aos-delay="200">
+            <div class="icon-box">
+              <i class="bi bi-person-badge"></i>
+              <h3>Guide Esperte</h3>
+              <p>Le nostre guide, appassionate della città, condividono conoscenze e curiosità su ogni angolo di Roma.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="flip-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i class="bi bi-recycle"></i>
+              <h3>Sostenibilità</h3>
+              <p>Usiamo solo veicoli elettrici, per un turismo rispettoso dell'ambiente.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="flip-up" data-aos-delay="400">
+            <div class="icon-box">
+              <i class="bi bi-sliders"></i>
+              <h3>Esperienze su Misura</h3>
+              <p>Tour personalizzati sui tuoi interessi, per una scoperta intima e personale della città.</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-center mt-4" style="color:rgb(var(--muted))">Rome by Golf Cart non è solo un servizio, ma un nuovo modo di vivere e scoprire Roma.</p>
+      </div>
+    </section>
+
+    <!-- Tours -->
+    <section id="tours" class="featured section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>I nostri Tour</h2>
+        <p>Scopri le nostre proposte e scegli l'esperienza che ti affascina di più.</p>
+      </div>
+
+      <div class="container">
+        <div class="cards-grid" data-aos="fade-up" data-aos-delay="100">
+          <!-- Tour 1 -->
+          <article class="card-glass tilt" data-aos="fade-up" data-aos-delay="100">
+            <div class="img">
+              <img src="assets/img/new/chiesa1.jpg" alt="Tour Chiese e Capolavori" />
+              <div class="icon"><i class="bi bi-bank"></i></div>
+            </div>
+            <h3>Tour Chiese e Capolavori</h3>
+            <p>Un viaggio tra le più belle chiese e opere d'arte di Roma.</p>
+            <div class="px-3 pb-3">
+              <a class="read-more" data-bs-toggle="collapse" href="#tour1" role="button" aria-expanded="false" aria-controls="tour1">Scopri di più</a>
+              <div class="collapse mt-3" id="tour1">
+                <ul>
+                  <li><strong>Punto di pick-up:</strong> Scelto dal cliente (hotel o appartamento)</li>
+                  <li><strong>Itinerario:</strong>
+                    <ol>
+                      <li><strong>Basilica di Sant'Andrea delle Fratte</strong> - Ammira gli angeli del Bernini e l'architettura barocca.</li>
+                      <li><strong>San Luigi dei Francesi</strong> - Le tre opere di Caravaggio.</li>
+                      <li><strong>Sant'Agostino</strong> - "La Madonna dei Pellegrini" di Caravaggio e affreschi di Raffaello.</li>
+                      <li><strong>Santa Maria dell'Anima</strong> - La chiesa tedesca e i suoi affreschi.</li>
+                      <li><strong>Santa Maria sopra Minerva</strong> - Il Cristo Risorto di Michelangelo.</li>
+                      <li><strong>Sant'Ignazio di Loyola</strong> - Gli spettacolari affreschi di Andrea Pozzo.</li>
+                      <li><strong>San Pietro in Vincoli</strong> - Il Mosè di Michelangelo.</li>
+                      <li><strong>Santa Maria Maggiore</strong> - I mosaici paleocristiani.</li>
+                      <li><strong>Chiesa del Gesù</strong> - I capolavori di Giovan Battista Gaulli.</li>
+                    </ol>
+                  </li>
+                  <li><strong>Rientro:</strong> Punto di drop-off concordato</li>
+                </ul>
+                <div class="text-center">
+                  <a href="https://romebycart.simplybook.it/v2/#book/service/8" class="btn-brand"><i class="bi bi-calendar-heart"></i> Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tour 2 -->
+          <article class="card-glass tilt" data-aos="fade-up" data-aos-delay="100">
+            <div class="img">
+              <img src="assets/img/new/colosseo1.jpg" alt="Tour Classico - Monumenti Principali di Roma" />
+              <div class="icon"><i class="bi bi-globe"></i></div>
+            </div>
+            <h3>Tour Classico - Monumenti Principali</h3>
+            <p>Scopri i monumenti più iconici di Roma in un unico tour.</p>
+            <div class="px-3 pb-3">
+              <a class="read-more" data-bs-toggle="collapse" href="#tour2" role="button" aria-expanded="false" aria-controls="tour2">Scopri di più</a>
+              <div class="collapse mt-3" id="tour2">
+                <ul>
+                  <li><strong>Punto di pick-up:</strong> Scelto dal cliente (hotel o appartamento)</li>
+                  <li><strong>Itinerario:</strong>
+                    <ol>
+                      <li><strong>Piazza di Spagna</strong> - Introduzione alla scalinata.</li>
+                      <li><strong>Fontana di Trevi</strong> - La fontana più famosa di Roma.</li>
+                      <li><strong>Piazza Venezia e Altare della Patria</strong> - Storia del monumento.</li>
+                      <li><strong>Fori Imperiali</strong> - Vista panoramica sull'antica Roma.</li>
+                      <li><strong>Colosseo</strong> - Il simbolo di Roma.</li>
+                      <li><strong>Circo Massimo</strong> - Le corse delle bighe.</li>
+                      <li><strong>Bocca della Verità</strong> - La celebre maschera leggendaria.</li>
+                      <li><strong>Pantheon</strong> - Architettura straordinaria.</li>
+                      <li><strong>Piazza Navona</strong> - Le fontane del Bernini.</li>
+                    </ol>
+                  </li>
+                  <li><strong>Rientro:</strong> Punto di drop-off concordato</li>
+                </ul>
+                <div class="text-center">
+                  <a href="https://romebycart.simplybook.it/v2/#book/service/7" class="btn-brand"><i class="bi bi-calendar-heart"></i> Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tour 3 -->
+          <article class="card-glass tilt" data-aos="fade-up" data-aos-delay="100">
+            <div class="img">
+              <img src="assets/img/new/tramonto1.jpg" alt="Tour Panoramico al Tramonto" />
+              <div class="icon"><i class="bi bi-sunset"></i></div>
+            </div>
+            <h3>Tour Panoramico al Tramonto</h3>
+            <p>Ammira Roma al calare del sole dai punti panoramici più suggestivi.</p>
+            <div class="px-3 pb-3">
+              <a class="read-more" data-bs-toggle="collapse" href="#tour3" role="button" aria-expanded="false" aria-controls="tour3">Scopri di più</a>
+              <div class="collapse mt-3" id="tour3">
+                <ul>
+                  <li><strong>Punto di pick-up:</strong> Scelto dal cliente (hotel o appartamento)</li>
+                  <li><strong>Itinerario:</strong>
+                    <ol>
+                      <li><strong>Pincio (Villa Borghese)</strong> - Vista mozzafiato sul Vaticano.</li>
+                      <li><strong>Piazza Navona</strong> - Capolavori del barocco.</li>
+                      <li><strong>Campo de' Fiori</strong> - Passaggio nel mercato più vivace.</li>
+                      <li><strong>Trastevere</strong> - Il quartiere pittoresco.</li>
+                      <li><strong>Terrazza del Gianicolo</strong> - Tramonto spettacolare.</li>
+                    </ol>
+                  </li>
+                  <li><strong>Rientro:</strong> Punto di drop-off concordato</li>
+                </ul>
+                <div class="text-center">
+                  <a href="https://romebycart.simplybook.it/v2/#book/service/6" class="btn-brand"><i class="bi bi-calendar-heart"></i> Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tour 4 -->
+          <article class="card-glass tilt" data-aos="fade-up" data-aos-delay="100">
+            <div class="img">
+              <img src="assets/img/new/roma2.jpg" alt="Tour Completo di Roma" />
+              <div class="icon"><i class="bi bi-map"></i></div>
+            </div>
+            <h3>Tour Completo di Roma</h3>
+            <p>Un itinerario completo per esplorare tutte le tappe imperdibili di Roma.</p>
+            <div class="px-3 pb-3">
+              <a class="read-more" data-bs-toggle="collapse" href="#tour4" role="button" aria-expanded="false" aria-controls="tour4">Scopri di più</a>
+              <div class="collapse mt-3" id="tour4">
+                <ul>
+                  <li><strong>Punto di pick-up:</strong> Scelto dal cliente (hotel o appartamento)</li>
+                  <li><strong>Itinerario:</strong>
+                    <ol>
+                      <li>Gianicolo</li>
+                      <li>Isola Tiberina</li>
+                      <li>Bocca della Verità</li>
+                      <li>Circo Massimo</li>
+                      <li>Colosseo e Arco di Costantino</li>
+                      <li>Piazza Venezia e Campidoglio</li>
+                      <li>Fontana di Trevi</li>
+                      <li>Piazza di Spagna</li>
+                      <li>Terrazza del Pincio e Villa Borghese</li>
+                      <li>Piazza del Popolo</li>
+                      <li>Piazza Augusto Imperatore</li>
+                      <li>Pantheon</li>
+                      <li>Piazza Navona</li>
+                      <li>Castel Sant'Angelo</li>
+                      <li>San Pietro</li>
+                      <li>Piazza Trilussa</li>
+                    </ol>
+                  </li>
+                  <li><strong>Rientro:</strong> Punto di drop-off concordato</li>
+                </ul>
+                <div class="text-center">
+                  <a href="https://romebycart.simplybook.it/v2/#book/service/5" class="btn-brand"><i class="bi bi-calendar-heart"></i> Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Personalizza il tuo tour</h2>
+        <p>Per noi ogni visitatore è unico: merita quindi un'esperienza su misura.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/new/Cart verde e checkmark in bolla.png" class="img-fluid" alt="Personalizza il tuo tour" />
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <p>Il nostro Experience Office è a tua completa disposizione per personalizzare il tour: scegli percorso, temi, punto di partenza e di arrivo. Parla direttamente con il nostro staff di esperti in archeologia, cultura e arte per creare l'itinerario perfetto per i tuoi interessi. Su richiesta, ti accompagniamo anche alla scoperta dei migliori ristoranti partner dove assaggiare l'autentica cucina romana.</p>
+            <div class="text-center mt-3">
+              <a href="https://wa.me/393317336796?text=Ciao!+Vorrei+personalizzare+un+tour+e+ricevere+pi%C3%B9+informazioni+sui+vostri+servizi." target="_blank" class="btn-brand">
+                <i class="bi bi-whatsapp"></i> Scrivici su WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servizi -->
+    <section id="services" class="featured section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>I nostri Servizi</h2>
+        <p>Servizi aggiuntivi per rendere il tuo tour ancora più speciale. Scopri il nostro menù esclusivo in collaborazione con Ristorante Pancrazio.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4 justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 col-lg-5">
+            <article class="card-glass tilt" data-aos="fade-up" data-aos-delay="100">
+              <div class="p-3 p-md-4">
+                <h3 class="mb-2" style="color:rgb(var(--brand))">Ristorante Pancrazio - Menù Tour Golf Cart</h3>
+                <p style="color:rgb(var(--muted))">Goditi un pranzo o una cena speciale con menù dedicato ai nostri clienti presso il Ristorante Pancrazio.</p>
+                <a class="read-more" data-bs-toggle="collapse" href="#menuPancrazio" role="button" aria-expanded="false" aria-controls="menuPancrazio">Vedi il menù</a>
+                <div class="collapse mt-3" id="menuPancrazio">
+                  <ul>
+                    <li><strong>Primo piatto, a scelta:</strong>
+                      <ul>
+                        <li>Ravioli di burrata con crema di pistacchio e stracciatella</li>
+                        <li>Mezzemaniche all'amatriciana</li>
+                        <li>Mezzemaniche alla gricia</li>
+                        <li>Tonnarello pomodorini, guanciale e pecorino</li>
+                        <li>Tonnarello cacio e pepe</li>
+                      </ul>
+                    </li>
+                    <li><strong>Secondo piatto, a scelta:</strong>
+                      <ul>
+                        <li>Saltimbocca alla romana</li>
+                        <li>Scaloppina al vino</li>
+                        <li>Pollo alla romana con peperoni</li>
+                        <li>Straccetti di manzo rucola e pomodorini</li>
+                        <li>Polpette al sugo</li>
+                      </ul>
+                    </li>
+                    <li><strong>Contorni, a scelta:</strong>
+                      <ul>
+                        <li>Insalata verde</li>
+                        <li>Patate al forno</li>
+                        <li>Cicoria ripassata</li>
+                      </ul>
+                    </li>
+                    <li><strong>Bevande:</strong>
+                      <ul>
+                        <li>Acqua</li>
+                        <li>Vino (1 bottiglia ogni 4 persone)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="text-center">
+                    <a href="https://wa.me/393317336796?text=Ciao!+Vorrei+pi%C3%B9+informazioni+sul+men%C3%B9+del+Ristorante+Pancrazio+per+Rome+by+Golf+Cart." target="_blank" class="btn-brand"><i class="bi bi-whatsapp"></i> Prenota ora</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Team -->
+<section id="team" class="team section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Chi siamo</h2>
+    <p>Alberto e Alessandro, due giovani imprenditori con una grande passione per il turismo e un profondo amore per Roma.</p>
+  </div>
   <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center text-center text-md-start" data-aos="fade-up">
-        <h1 data-aos="fade-up">Scopri Roma con Eleganza e Comfort</h1>
-        <p data-aos="fade-up">Benvenuti in Rome by Golf Cart, il modo più raffinato e confortevole per esplorare la Città Eterna. I nostri tour esclusivi in golf cart elettrici ti permetteranno di vivere un'esperienza unica, immergendoti nella storia millenaria e nella cultura vibrante di Roma.</p>
-        <div class="d-flex justify-content-center mt-2" data-aos="fade-up">
-          <a href="https://romebycart.simplybook.it/v2/#book/count/1/provider/3/" class="btn" style="background-color: #2f3b69; border-color: #2f3b69; color: #e3dddc;">Prenota</a>
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member text-center">
+          <div class="member-img">
+            <img src="assets/img/new/albi2.svg" class="img-fluid w-50" alt="Alberto - Co-Founder" />
+          </div>
+          <div class="member-info">
+            <h4>Alberto</h4>
+            <span>Co‑Founder</span>
+            <p>La nostra avventura imprenditoriale nasce dall'ambizione di condividere con il mondo la bellezza e la storia della nostra città attraverso esperienze turistiche uniche.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member text-center">
+          <div class="member-img">
+            <img src="assets/img/new/cofounder.svg" class="img-fluid w-50" alt="Alessandro - Co-Founder" />
+          </div>
+          <div class="member-info">
+            <h4>Alessandro</h4>
+            <span>Co‑Founder</span>
+            <p>Oltre ai tour in golf cart, gestiamo strutture ricettive nel cuore di Roma, con l'obiettivo di offrire un servizio di alta qualità e rendere ogni soggiorno indimenticabile.</p>
+          </div>
         </div>
       </div>
     </div>
+    <p class="text-center mt-4" style="color:rgb(var(--muted))">
+      Con Rome by Golf Cart vogliamo offrirti non solo un viaggio, ma una vera esplorazione della Roma più autentica e vibrante.
+    </p>
   </div>
 </section>
 
 
-    <!-- Why Us Section -->
-    <section id="why-us" class="about section">
 
-      <!-- Section Title -->
+    <!-- Recensioni -->
+    <section id="reviews" class="reviews section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Perché Scegliere Rome by Golf Cart?</h2>
-        <p>Scegliere Rome by Golf Cart significa affidarsi a chi ama Roma e vuole far scoprire agli altri questa passione. I nostri tour garantiscono:</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-        <div class="row gy-4 icon-boxes">
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <i class="bi bi-car-front"></i>
-              <h3>Comfort e Accessibilità</h3>
-              <p>Esplora le vie meno accessibili e i tesori nascosti di Roma con la massima comodità.</p>
-            </div>
-          </div><!-- End Icon Box -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <i class="bi bi-person-badge"></i>
-              <h3>Guide Esperte</h3>
-              <p>Le nostre guide sono appassionate conoscitrici della città, pronte a trasmetterti amore e conoscenza per ogni angolo di Roma.</p>
-            </div>
-          </div><!-- End Icon Box -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <i class="bi bi-recycle"></i>
-              <h3>Sostenibilità</h3>
-              <p>Utilizziamo solo mezzi elettrici, impegnandoci per un turismo rispettoso dell'ambiente.</p>
-            </div>
-          </div><!-- End Icon Box -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box">
-              <i class="bi bi-sliders"></i>
-              <h3>Esperienze Personalizzate</h3>
-              <p>Offriamo tour che si adattano ai tuoi interessi, per una scoperta più intima e personale della città.</p>
-            </div>
-          </div><!-- End Icon Box -->
-
-        </div>
-        <p class="text-center mt-4">Rome by Golf Cart non è solo un servizio di tour, ma un modo nuovo di vivere e scoprire Roma.</p>
-
+        <h2>Recensioni dei Clienti</h2>
+        <p>Scopri cosa dicono i nostri ospiti dei tour Rome by Golf Cart.</p>
       </div>
-
-    </section><!-- /Why Us Section -->
-
-<!-- Sezione Tour -->
-<section id="tours" class="featured section">
-
-  <!-- Titolo Sezione -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>I Nostri Tour</h2>
-    <p>Esplora le nostre opzioni di tour e scegli l'esperienza che ti affascina di più.</p>
-  </div><!-- Fine Titolo Sezione -->
-
-  <div class="container">
-
-    <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
-
-      <!-- Tour 1 -->
-      <div class="col-md-3">
-        <div class="card">
-          <div class="img">
-            <img src="assets/img/new/chiesa1.jpg" alt="Tour delle Chiese e Opere d'Arte" class="img-fluid">
-            <div class="icon"><i class="bi bi-bank"></i></div>
-          </div>
-          <h2 class="title">Tour delle Chiese e Opere d'Arte</h2>
-          <p>Un viaggio attraverso le chiese e le opere d'arte più belle di Roma.</p>
-          <div class="text-center">
-            <a class="read-more" data-bs-toggle="collapse" href="#tour1" role="button" aria-expanded="false" aria-controls="tour1">
-              Scopri di più
-            </a>
-          </div>
-          <div class="collapse mt-2" id="tour1">
-            <ul>
-              <li><strong>Punto di prelievo:</strong> Scelto dal cliente (hotel o appartamento)</li>
-              <li><strong>Itinerario:</strong>
-                <ol>
-                  <li><strong>Basilica di Sant'Andrea delle Fratte</strong> - Ammira gli angeli di Bernini e l'architettura barocca.</li>
-                  <li><strong>Chiesa di San Luigi dei Francesi</strong> - Osserva i tre capolavori di Caravaggio.</li>
-                  <li><strong>Sant'Agostino</strong> - Visita "La Madonna dei Pellegrini" di Caravaggio e gli affreschi di Raffaello.</li>
-                  <li><strong>Chiesa di Santa Maria dell'Anima</strong> - Scopri la chiesa tedesca con i suoi affreschi.</li>
-                  <li><strong>Chiesa di Santa Maria sopra Minerva</strong> - Ammira il Cristo risorto di Michelangelo.</li>
-                  <li><strong>Chiesa di Sant'Ignazio di Loyola</strong> - Meravigliati degli affreschi spettacolari di Andrea Pozzo.</li>
-                  <li><strong>Basilica di San Pietro in Vincoli</strong> - Ammira la statua di Mosè di Michelangelo.</li>
-                  <li><strong>Basilica di Santa Maria Maggiore</strong> - Visita i mosaici paleocristiani.</li>
-                  <li><strong>Chiesa del Gesù</strong> - Ammira gli affreschi di Giovanni Battista Gaulli.</li>
-                </ol>
-              </li>
-              <li><strong>Ritorno:</strong> Punto di destinazione scelto</li>
-            </ul>
-            <div class="text-center">
-              <a href="https://romebycart.simplybook.it/v2/#book/service/8" class="btn mt-2" style="background-color: #2f3b69; border-color: #2f3b69; color: #e3dddc;">Prenota Ora</a>
-            </div>
-          </div>
-        </div>
-      </div><!-- Fine Carta -->
-
-      <!-- Tour 2 -->
-      <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
-        <div class="card">
-          <div class="img">
-            <img src="assets/img/new/colosseo1.jpg" alt="Tour Classico - Principali Monumenti di Roma" class="img-fluid">
-            <div class="icon"><i class="bi bi-globe"></i></div>
-          </div>
-          <h2 class="title">Tour Classico - Principali Monumenti di Roma</h2>
-          <p>Scopri i monumenti più iconici di Roma in un unico tour.</p>
-          <div class="text-center">
-            <a class="read-more" data-bs-toggle="collapse" href="#tour2" role="button" aria-expanded="false" aria-controls="tour2">
-              Scopri di più
-            </a>
-          </div>
-          <div class="collapse mt-2" id="tour2">
-            <ul>
-              <li><strong>Punto di prelievo:</strong> Scelto dal cliente (hotel o appartamento)</li>
-              <li><strong>Itinerario:</strong>
-                <ol>
-                  <li><strong>Piazza di Spagna</strong> - Introduzione sui gradini di Trinità dei Monti.</li>
-                  <li><strong>Fontana di Trevi</strong> - Ammira la fontana più famosa di Roma.</li>
-                  <li><strong>Piazza Venezia e Altare della Patria</strong> - Scopri la storia di questo monumento.</li>
-                  <li><strong>Fori Imperiali</strong> - Vista panoramica dell'antica Roma.</li>
-                  <li><strong>Colosseo</strong> - Esplora il simbolo di Roma.</li>
-                  <li><strong>Circo Massimo</strong> - Scopri la storia delle corse dei carri.</li>
-                  <li><strong>Bocca della Verità</strong> - Visita la leggendaria maschera.</li>
-                  <li><strong>Pantheon</strong> - Ammira l'architettura straordinaria.</li>
-                  <li><strong>Piazza Navona</strong> - Scopri le fontane di Bernini.</li>
-                </ol>
-              </li>
-              <li><strong>Ritorno:</strong> Punto di destinazione scelto</li>
-            </ul>
-            <div class="text-center">
-              <a href="https://romebycart.simplybook.it/v2/#book/service/7" class="btn mt-2" style="background-color: #2f3b69; border-color: #2f3b69; color: #e3dddc;">Prenota Ora</a>
-            </div>
-          </div>
-        </div>
-      </div><!-- Fine Carta -->
-
-      <!-- Tour 3 -->
-      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="card">
-          <div class="img">
-            <img src="assets/img/new/tramonto1.jpg" alt="Tour Panoramico al Tramonto" class="img-fluid">
-            <div class="icon"><i class="bi bi-sunset"></i></div>
-          </div>
-          <h2 class="title">Tour Panoramico al Tramonto</h2>
-          <p>Ammira Roma al tramonto dai punti panoramici più suggestivi.</p>
-          <div class="text-center">
-            <a class="read-more" data-bs-toggle="collapse" href="#tour3" role="button" aria-expanded="false" aria-controls="tour3">
-              Scopri di più
-            </a>
-          </div>
-          <div class="collapse mt-2" id="tour3">
-            <ul>
-              <li><strong>Punto di prelievo:</strong> Scelto dal cliente (hotel o appartamento)</li>
-              <li><strong>Itinerario:</strong>
-                <ol>
-                  <li><strong>Pincio (Villa Borghese)</strong> - Vista mozzafiato sul Vaticano.</li>
-                  <li><strong>Piazza Navona</strong> - Ammira l'arte barocca.</li>
-                  <li><strong>Campo de' Fiori</strong> - Attraversa il vivace mercato.</li>
-                  <li><strong>Trastevere</strong> - Esplora il pittoresco quartiere.</li>
-                  <li><strong>Terrazza del Gianicolo</strong> - Goditi un tramonto spettacolare.</li>
-                </ol>
-              </li>
-              <li><strong>Ritorno:</strong> Punto di destinazione scelto</li>
-            </ul>
-            <div class="text-center">
-              <a href="https://romebycart.simplybook.it/v2/#book/service/6" class="btn mt-2" style="background-color: #2f3b69; border-color: #2f3b69; color: #e3dddc;">Prenota Ora</a>
-            </div>
-          </div>
-        </div>
-      </div><!-- Fine Carta -->
-
-      <!-- Tour 4 -->
-      <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
-        <div class="card">
-          <div class="img">
-            <img src="assets/img/new/roma2.jpg" alt="Tour Completo di Roma" class="img-fluid">
-            <div class="icon"><i class="bi bi-map"></i></div>
-          </div>
-          <h2 class="title">Tour Completo di Roma</h2>
-          <p>Un tour completo per esplorare tutti i luoghi imperdibili di Roma.</p>
-          <div class="text-center">
-            <a class="read-more" data-bs-toggle="collapse" href="#tour4" role="button" aria-expanded="false" aria-controls="tour4">
-              Scopri di più
-            </a>
-          </div>
-          <div class="collapse mt-2" id="tour4">
-            <ul>
-              <li><strong>Punto di prelievo:</strong> Scelto dal cliente (hotel o appartamento)</li>
-              <li><strong>Itinerario:</strong>
-                <ol>
-                  <li>Gianicolo</li>
-                  <li>Isola Tiberina</li>
-                  <li>Bocca della Verità</li>
-                  <li>Circo Massimo</li>
-                  <li>Colosseo e Arco di Costantino</li>
-                  <li>Piazza Venezia e Campidoglio</li>
-                  <li>Fontana di Trevi</li>
-                  <li>Piazza di Spagna</li>
-                  <li>Terrazza del Pincio e Villa Borghese</li>
-                  <li>Piazza del Popolo</li>
-                  <li>Piazza Augusto Imperatore</li>
-                  <li>Pantheon</li>
-                  <li>Piazza Navona</li>
-                  <li>Castel Sant'Angelo</li>
-                  <li>San Pietro</li>
-                  <li>Piazza Trilussa</li>
-                </ol>
-              </li>
-              <li><strong>Ritorno:</strong> Punto di destinazione scelto</li>
-            </ul>
-            <div class="text-center">
-              <a href="https://romebycart.simplybook.it/v2/#book/service/5" class="btn mt-2" style="background-color: #2f3b69; border-color: #2f3b69; color: #e3dddc;">Prenota Ora</a>
-            </div>
-          </div>
-        </div>
-      </div><!-- Fine Carta -->
-
-    </div>
-
-  </div>
-
-</section><!-- /Sezione Tour -->
-
-
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Personalizza il Tuo Tour</h2>
-        <p>In Rome by Golf Cart crediamo fermamente che ogni visitatore sia unico, e come tale, meriti un'esperienza su misura.</p>
-      </div><!-- End Section Title -->
-
       <div class="container">
-
-        <div class="row gy-4 align-items-center features-item">
-          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/features-1.svg" class="img-fluid" alt="Personalizza il tuo tour">
-          </div>
-          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
-            <p>Il nostro Ufficio Esperienze è a tua completa disposizione per personalizzare il tuo tour, permettendoti di scegliere il percorso, i temi e persino i punti di partenza e di arrivo. Dialoga direttamente con il nostro staff esperto in archeologia, cultura e arte per costruire l'itinerario che meglio risponde ai tuoi interessi. Su richiesta, possiamo anche guidarti alla scoperta dei migliori ristoranti partner dove degustare la vera cucina romana, per un'esperienza gastronomica autentica e deliziosa.</p>
-          
-            <div style="text-align: center; margin-top: 20px;">
-              <a href="https://wa.me/393317336796?text=Ciao!+Vorrei+personalizzare+un+tour+e+avere+più+informazioni+sui+vostri+servizi." target="_blank">
-                <button style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-right: 10px;">
-                  Chatta con noi su WhatsApp
-                </button>
-              </a>
+        <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3400">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="review text-center glass">
+                <p>"Esperienza fantastica! Guide preparate e tour organizzato alla perfezione. Non vedo l'ora di tornare a Roma per farne un altro."</p>
+                <div class="stars" style="display:flex;justify-content:center;margin-top:10px;">⭐⭐⭐⭐⭐</div>
+                <h5 class="mt-2">- Maria B.</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="review text-center glass">
+                <p>"Un modo unico e rilassante per esplorare Roma. La guida era cordiale e preparatissima. Consiglio vivamente Rome by Golf Cart!"</p>
+                <div class="stars" style="display:flex;justify-content:center;margin-top:10px;">⭐⭐⭐⭐⭐</div>
+                <h5 class="mt-2">- John R.</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="review text-center glass">
+                <p>"Tour fantastico, ho scoperto angoli di Roma che non avrei mai visto da solo. Servizio eccellente e molto professionale."</p>
+                <div class="stars" style="display:flex;justify-content:center;margin-top:10px;">⭐⭐⭐⭐</div>
+                <h5 class="mt-2">- José M.</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="review text-center glass">
+                <p>"Ottimo servizio, grande professionalità e cortesia. La nostra guida ha reso la visita a Roma indimenticabile. Lo rifarei subito."</p>
+                <div class="stars" style="display:flex;justify-content:center;margin-top:10px;">⭐⭐⭐⭐⭐</div>
+                <h5 class="mt-2">- Laura G.</h5>
+              </div>
             </div>
           </div>
-        </div><!-- Features Item -->
-
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviews" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Precedente</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselReviews" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Successivo</span>
+          </button>
+        </div>
       </div>
+    </section>
 
-    </section><!-- /Features Section -->
-
-<!-- Servizi Section -->
-<section id="servizi" class="featured section">
-
-  <!-- Titolo Sezione -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>I Nostri Servizi</h2>
-    <p>Offriamo servizi aggiuntivi per rendere il tuo tour ancora più speciale. Scopri il nostro menù esclusivo offerto dal Ristorante Pancrazio.</p>
-  </div><!-- Fine Titolo Sezione -->
-
-  <div class="container">
-
-    <div class="row gy-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-
-      <!-- Servizio Ristorante Pancrazio -->
-      <div class="col-md-4">
-        <div class="card">
-
-          <h2 class="title">Ristorante Pancrazio - Menù Tour Golf Cart</h2>
-          <p>Goditi un pranzo o cena con un menù speciale per i nostri clienti presso il Ristorante Pancrazio.</p>
-          <div class="text-center">
-            <a class="read-more" data-bs-toggle="collapse" href="#menuPancrazio" role="button" aria-expanded="false" aria-controls="menuPancrazio">
-              Il Menù
-            </a>
-          </div>
-          <div class="collapse mt-2" id="menuPancrazio">
-            <ul>
-              <li><strong>Primo, a scelta tra:</strong>
-                <ul>
-                  <li>Ravioli di burrata con crema di pistacchio e stracciatella</li>
-                  <li>Mezzemaniche all'amatriciana</li>
-                  <li>Mezzemaniche alla gricia</li>
-                  <li>Tonnarello pachino guanciale e pecorino</li>
-                  <li>Tonnarello cacio e pepe</li>
-                </ul>
-              </li>
-              <li><strong>Secondo, a scelta tra:</strong>
-                <ul>
-                  <li>Saltimbocca alla romana</li>
-                  <li>Scaloppina al vino</li>
-                  <li>Pollo alla romana con peperoni</li>
-                  <li>Straccetti alla romana con rucola e pomodorini pachino</li>
-                  <li>Polpette al sugo</li>
-                </ul>
-              </li>
-              <li><strong>Contorno, a scelta tra:</strong>
-                <ul>
-                  <li>Insalata verde</li>
-                  <li>Patate al forno</li>
-                  <li>Cicoria ripassata</li>
-                </ul>
-              </li>
-              <li><strong>Bevande:</strong>
-                <ul>
-                  <li>Acqua</li>
-                  <li>Vino (1 bottiglia ogni 4 persone)</li>
-                </ul>
-              </li>
-            </ul>
-            <div class="text-center">
-              <a href="https://wa.me/393317336796?text=Ciao!+Vorrei+più+informazioni+sul+menù+del+Ristorante+Pancrazio+per+Rome+by+Golf+Cart." target="_blank">
-                <button style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-right: 10px;">
-                  Prenota ora
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div><!-- Fine Carta -->
-
-    </div>
-
-  </div>
-
-</section><!-- Fine Sezione Servizi -->
-
-
-
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
+    <!-- Contatti -->
+    <section id="contact" class="contact section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Chi Siamo</h2>
-        <p>Alberto e Alessandro, due giovani imprenditori con una fervente passione per il turismo e un amore profondo per Roma.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
+        <h2>Contatti</h2>
+        <p>Per informazioni e prenotazioni, contattaci ai seguenti riferimenti:</p>
+      </div>
+      <div class="container" data-aos="fade" data-aos-delay="100">
         <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member text-center">
-              <div class="member-img">
-                <img src="assets/img/new/albi2.svg" class="img-fluid w-50" alt="Alberto - Co-Fondatore">
-              </div>
-              <div class="member-info">
-                <h4>Alberto</h4>
-                <span>Co-Fondatore</span>
-                <p>La nostra avventura imprenditoriale nasce dall'ambizione di condividere con il mondo la bellezza e la storia della nostra città attraverso esperienze turistiche uniche.</p>
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Indirizzo</h3>
+                <p>Via Golametto 4, 00195 Roma, Italia</p>
               </div>
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member text-center">
-              <div class="member-img">
-                <img src="assets/img/new/cofounder.svg" class="img-fluid w-50" alt="Alessandro - Co-Fondatore">
-              </div>
-              <div class="member-info">
-                <h4>Alessandro</h4>
-                <span>Co-Fondatore</span>
-                <p>Oltre ai tour in golf cart, gestiamo strutture ricettive nel cuore di Roma, impegnandoci a fornire un servizio di alta qualità che renda ogni soggiorno indimenticabile.</p>
+            <div class="info-item d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Telefono</h3>
+                <p>+39 331 7336796<br />+39 346 5457731</p>
               </div>
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member text-center">
-              <div class="member-img">
-                <img src="assets/img/new/guida.svg" class="img-fluid w-50" alt="Antonio Petrozza - Guida Turistica">
-              </div>
-              <div class="member-info">
-                <h4>Antonio Petrozza</h4>
-                <span>Guida Turistica</span>
-                <p>Antonio è la nostra guida turistica esperta, pronta a portarti alla scoperta dei luoghi più iconici di Roma e a svelarti i segreti nascosti della città. Con anni di esperienza, Antonio garantisce un tour unico e coinvolgente per ogni visitatore.</p>
+            <div class="info-item d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:romebycart@gmail.com">romebycart@gmail.com</a></p>
               </div>
             </div>
-          </div><!-- End Team Member -->
-
+          </div>
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Il tuo nome" required />
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="La tua email" required />
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Oggetto" required />
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Messaggio" required></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading">Caricamento…</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Messaggio inviato. Grazie!</div>
+                  <button type="submit" class="btn-brand">Invia messaggio</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-        <p class="text-center mt-4">Con Rome by Golf Cart, desideriamo offrirti non solo un viaggio, ma una vera e propria esplorazione della Roma autentica e vibrante.</p>
-
       </div>
-
-    </section><!-- /Team Section -->
-
-<!-- Recensioni Section -->
-<section id="reviews" class="reviews section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Recensioni dei Nostri Clienti</h2>
-    <p>Scopri cosa dicono i nostri ospiti sui tour di Rome by Golf Cart.</p>
-  </div><!-- End Section Title -->
-
-  <div class="container">
-    <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-      <div class="carousel-inner">
-        
-        <!-- Recensione 1 (Italiano) -->
-        <div class="carousel-item active">
-          <div class="review text-center">
-            <p>"Esperienza fantastica! Le guide erano esperte e il tour era ben organizzato. Non vedo l'ora di tornare a Roma e farne un altro."</p>
-            <div class="stars" style="display: flex; justify-content: center; margin-top: 10px;">
-              ⭐⭐⭐⭐⭐
-            </div>
-            <h5>- Maria B.</h5>
-          </div>
-        </div>
-
-        <!-- Recensione 2 (Inglese) -->
-        <div class="carousel-item">
-          <div class="review text-center">
-            <p>"A unique and relaxing way to explore Rome. The guide was friendly and knowledgeable. I highly recommend Rome by Golf Cart!"</p>
-            <div class="stars" style="display: flex; justify-content: center; margin-top: 10px;">
-              ⭐⭐⭐⭐⭐
-            </div>
-            <h5>- John R.</h5>
-          </div>
-        </div>
-
-        <!-- Recensione 3 (Spagnolo) -->
-        <div class="carousel-item">
-          <div class="review text-center">
-            <p>"El tour fue fantástico, descubrí lugares de Roma que nunca habría visto por mi cuenta. Servicio excepcional y muy profesional."</p>
-            <div class="stars" style="display: flex; justify-content: center; margin-top: 10px;">
-              ⭐⭐⭐⭐
-            </div>
-            <h5>- José M.</h5>
-          </div>
-        </div>
-
-        <!-- Recensione 4 (Italiano) -->
-        <div class="carousel-item">
-          <div class="review text-center">
-            <p>"Ottimo servizio, grande professionalità e cortesia. La nostra guida ha reso la visita a Roma indimenticabile. Lo rifarei subito."</p>
-            <div class="stars" style="display: flex; justify-content: center; margin-top: 10px;">
-              ⭐⭐⭐⭐⭐
-            </div>
-            <h5>- Laura G.</h5>
-          </div>
-        </div>
-
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviews" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Precedente</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselReviews" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Successivo</span>
-      </button>
-    </div>
-  </div>
-</section><!-- End Recensioni Section -->
-
-
-
-
-<!-- Contact Section -->
-<section id="contact" class="contact section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Contatti</h2>
-    <p>Per informazioni e prenotazioni, contattaci ai seguenti recapiti:</p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade" data-aos-delay="100">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-4">
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-          <i class="bi bi-geo-alt flex-shrink-0"></i>
-          <div>
-            <h3>Indirizzo</h3>
-            <p>Via Golametto 4, 00195 Roma, Italia</p>
-          </div>
-        </div><!-- End Info Item -->
-
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-          <i class="bi bi-telephone flex-shrink-0"></i>
-          <div>
-            <h3>Chiamaci</h3>
-            <p>+39 331 7336796<br>+39 346 5457731</p>
-          </div>
-        </div><!-- End Info Item -->
-
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-          <i class="bi bi-envelope flex-shrink-0"></i>
-          <div>
-            <h3>Email</h3>
-            <p><a href="mailto:Romebycart@gmail.com">romebycart@gmail.com</a></p>
-          </div>
-        </div><!-- End Info Item -->
-        
-
-      </div>
-
-      <div class="col-lg-8">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Il Tuo Nome" required="">
-            </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="La Tua Email" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Oggetto" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Messaggio" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Caricamento</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Il tuo messaggio è stato inviato. Grazie!</div>
-
-              <button type="submit">Invia Messaggio</button>
-            </div>
-
-          </div>
-        </form>
-      </div><!-- End Contact Form -->
-
-    </div>
-
-  </div>
-
-</section><!-- /Contact Section -->
-
-
+    </section>
   </main>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Rome by Cart</h3>
-      <p>Esplora Roma in modo unico e sostenibile.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
+  <!-- Footer -->
+  <footer id="footer" class="footer py-5">
+    <div class="container text-center">
+      <img src="assets/img/new/Senza titolo-2 copia (1) (1).png" alt="Rome by Cart" style="height:56px" class="mb-2" />
+      <p class="mb-2" style="color:rgb(var(--muted))">Esplora Roma in modo unico e sostenibile.</p>
+      <div class="social-links d-flex justify-content-center mb-3">
+        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
       </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Rome by Cart</strong> <span>Tutti i diritti riservati</span>
-        </div>
-      </div>
+      <div class="small" style="color:rgb(var(--muted))">© <span class="sitename">Rome by Cart</span> · Tutti i diritti riservati</div>
     </div>
   </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
   <!-- Vendor JS Files -->
+   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- Minimal JS to init AOS and tidy interactions -->
+  <script>
+    AOS.init({ duration: 700, once: true, offset: 60 });
+    // Smooth anchor scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const id = a.getAttribute('href');
+        if(id.length>1){
+          const target = document.querySelector(id);
+          if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+        }
+      });
+    });
+  </script>
+  <!-- Mobile CTA is already present -->
 
+  <!-- Motion & AOS enhancements -->
+  <script>
+    // AOS with richer defaults
+    AOS.init({ duration: 900, easing: 'ease-out-quart', once: true, offset: 80, anchorPlacement: 'top-bottom' });
+
+    // Parallax hero background
+    const hero = document.querySelector('.hero');
+    if(hero){
+      window.addEventListener('scroll', ()=>{
+        const y = window.scrollY * 0.25; // slower than scroll
+        hero.style.backgroundPosition = `center calc(50% + ${y}px)`;
+      }, {passive:true});
+    }
+
+    // Auto-assign staggered AOS delays to cards & icon boxes for nicer cascade
+    const stagger = (nodes, base=100, step=70)=>{
+      nodes.forEach((n, i)=>{ n.setAttribute('data-aos-delay', base + i*step); });
+    };
+    stagger(document.querySelectorAll('.card-glass'));
+    stagger(document.querySelectorAll('.icon-box'), 50, 80);
+
+    // Subtle mouse parallax for tilt elements
+    document.querySelectorAll('.tilt').forEach(el=>{
+      let rect;
+      const onMove = (e)=>{
+        rect = rect || el.getBoundingClientRect();
+        const px = (e.clientX - rect.left)/rect.width - .5;
+        const py = (e.clientY - rect.top)/rect.height - .5;
+        el.style.transform = `rotateX(${-(py*6)}deg) rotateY(${px*6}deg) translateY(-2px)`;
+      };
+      const reset = ()=>{ el.style.transform = ''; rect = null; };
+      el.addEventListener('mousemove', onMove);
+      el.addEventListener('mouseleave', reset);
+    });
+  </script>
 </body>
-
 </html>
